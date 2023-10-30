@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agricultural Sensor Data</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #7D2528;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #7D2528;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: white;
+            color: #7D2528;
+        }
+
+        .card {
+            background: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card h3 {
+            color: #7D2528;
+            margin-top: 0;
+        }
+
+        .card img {
+            max-width: 100%;
+        }
+
+        .data-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px 0;
+        }
+	span {
+	    color: #7D2528;
+	}
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="#sensor1">Sensor 1</a>
+        <a href="#sensor2">Sensor 2</a>
+    </div>
+
+    <div class="container">
+        <h1>Agricultural Sensor Dashboard</h1>
+
+        <div class="card">
+            <h3>Air Temperature</h3>
+            <div class="data-item">
+                <span>Current Value:</span>
+                <span id="air-temp">Loading...</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Soil Temperature</h3>
+            <div class="data-item">
+                <span>Current Value:</span>
+                <span id="soil-temp">Loading...</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Camera Feed</h3>
+            <img id="camera-feed" src="path-to-your-camera-feed.jpg" alt="Camera Feed">
+        </div>
+
+        <div class="card">
+            <h3>Soil Moisture</h3>
+            <div class="data-item">
+                <span>Current Value:</span>
+                <span id="soil-moisture">Loading...</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
