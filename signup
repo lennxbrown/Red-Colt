@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="WASSSUB">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comics and Sacred Texts</title>
+    <link rel="stylesheet" href="static/styling.css">
+  </head>
+  <body>
+
+  <header>
+      <div class="header-main">
+    <nav class="nav-header-main">
+          <ul>
+            <li class="header"><a href="/home">Home</a>
+              <li><a href="/about">About</a></li>
+              <li><a href="/measurments">Measurments</a></li>
+          </ul>
+        </nav>
+      </div>
+
+  </header>
+      <div id="page-container">
+  <main>
+    <div class="wrapper-main">
+      <section class="section-default">
+        <h1> Signup </h1>
+        <form class="form-signup" action="reg_signup" method="post">
+                    Complete this signup form:<br><br>
+          <input type="text" name="email" placeholder="Email"><br>
+          <input type="password"  name="pwd" placeholder="Password"><br>
+          <button type="submit" name="signup-submit">Submit</button><br>
+        </form>
+      </section>
+    </div>
+  </main>
+</div>
+</body>
+
+</html>
